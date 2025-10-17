@@ -30,7 +30,7 @@ const HomePage = () => {
                     <a href="/homepage" className="nav-link active">HOME</a>
                     <a href="/productpage" className="nav-link">SHOP</a>
                     <a href="/cartpage" className="nav-link">MY CART</a>
-                    <a href="/reviews" className="nav-link">REVIEWS</a>
+                    {/* <a href="/reviews" className="nav-link">REVIEWS</a> */}
                     <a href="/aboutpage" className="nav-link">ABOUT</a>
                 </nav>
             </div>
@@ -46,7 +46,7 @@ const HomePage = () => {
                     <br />
                     <br /> Why settle for ordinary when you can give extraordinary?
                 </p>
-                <button className="shop-now-button">SHOP NOW</button>
+                <button className="shop-now-button" onClick={() => window.location.href="/productpage"}>SHOP NOW</button>
             </div>
             <img src={require("../assets/flowershomepage.jpg")} alt="Flowers" className="homepage-flowers" />
             <div className="white-rectangle"></div>

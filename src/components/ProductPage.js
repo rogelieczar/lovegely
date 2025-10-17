@@ -152,7 +152,7 @@ const ProductPage = () => {
                     <a href="/homepage" className="nav-link">HOME</a>
                     <a href="/productpage" className="nav-link active">SHOP</a>
                     <a href="/cartpage" className="nav-link">MY CART</a>
-                    <a href="/reviews" className="nav-link">REVIEWS</a>
+                    {/* <a href="/reviews" className="nav-link">REVIEWS</a> */}
                     <a href="/aboutpage" className="nav-link">ABOUT</a>
                 </nav>
             </div>

@@ -14,7 +14,7 @@ const AboutPage = () => {
                     <a href="/homepage" className="nav-link">HOME</a>
                     <a href="/productpage" className="nav-link">SHOP</a>
                     <a href="/cartpage" className="nav-link">MY CART</a>
-                    <a href="/reviews" className="nav-link">REVIEWS</a>
+                    {/* <a href="/reviews" className="nav-link">REVIEWS</a> */}
                     <a href="/aboutpage" className="nav-link active">ABOUT</a>
                 </nav>
             </div>

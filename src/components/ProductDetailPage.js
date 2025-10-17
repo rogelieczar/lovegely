@@ -30,9 +30,9 @@ const ProductDetailPage = () => {
           <a href="/cartpage" className="nav-link">
             MY CART
           </a>
-          <a href="/reviews" className="nav-link">
+          {/* <a href="/reviews" className="nav-link">
             REVIEWS
-          </a>
+          </a> */}
           <a href="/aboutpage" className="nav-link">
             ABOUT
           </a>
