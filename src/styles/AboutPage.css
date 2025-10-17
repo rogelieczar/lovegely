@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../assets/fonts/Kollektif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../assets/fonts/Kollektif-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../assets/fonts/Kollektif-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../assets/fonts/Kollektif-BoldItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BDScript';
+    src: url('../assets/fonts/BDScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDScript';
+    src: url('../assets/fonts/BDScript-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDSans';
+    src: url('../assets/fonts/BDSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDSans';
+    src: url('../assets/fonts/BDSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDSans';
+    src: url('../assets/fonts/BDSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDSans ExtReg';
+    src: url('../assets/fonts/BDSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.aboutpage-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background: #ffc0cb;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto; /* Enable scrolling */
+    padding: 0px 0 0 0px; /* top right bottom left */
+}
+
+.aboutpage-logo {
+    width: 120px; /* Change this value to your preferred size */
+    height: auto;
+    /* Optional: add margin if you want more space */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.aboutpage-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutpage-nav {
+    display: flex;
+    gap: 90px;         /* More space between links */
+    margin-left: 650px; /* Move all links further right */
+}
+
+.nav-link {
+    font-family: 'Kollektif', sans-serif;
+    font-size: 16px;
+    color: #3b3b3b;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s;
+    letter-spacing: 3px; /* Adjust this value as needed */
+    margin-right: 10px; /* Add space after each link */
+}
+
+.nav-link:hover {
+    color: #f5f5dc;
+}
+
+.nav-link.active {
+    color: #f5f5dc;
+}
+
+.aboutpage-white-rectangle {
+    width: 1400px;
+    height: 340px;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: auto;   /* Center horizontally */
+    margin-right: auto;  /* Center horizontally */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.aboutus-image {
+    position: absolute;
+    top: 160px;
+    left: 330px;
+    width: 600px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 0 auto; 
+    padding-top: 20px;
+}  
+
+.aboutus-text {
+    font-family: 'BDScript', cursive;
+    font-weight: bold;
+    font-size: 100px;
+    color: black;
+    text-align: right;
+    margin: 10px 260px 0 0; /* top right bottom left */
+}
+
+.aboutus-paragraph {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #b76e79;
+    text-align: justify;
+    margin: 10px 70px 0 750px; /* top right bottom left */
+    line-height: 1.6; /* Adjust line height for better readability */
+    max-width: 600px; /* Limit width for better readability */
+}
+
+.ourstory-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start;
+    margin-top: 0px;
+    gap: 10px; /* Space between text and image */
+}
+
+.ourstory-text {
+    font-family: 'BDScript', cursive;
+    font-weight: bold;
+    font-size: 100px;
+    color: black;
+    text-align: right;
+    margin: 40px 280px 0 0; /* Remove left margin for better alignment */
+}
+
+.ourstory-paragraph {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #b76e79;
+    text-align: justify;
+    line-height: 1.6; 
+    max-width: 700px;
+    margin: 10px 60px 0 70px; /* Remove left margin for better alignment */
+}
+
+.ourstory-image {
+    width: 480px;
+    height: auto;
+    display: block;
+    margin: 0; /* Remove extra margins */
+}  
+
+.whychooseus-image {
+    position: absolute;
+    top: 850px;
+    left: 360px;
+    width: 600px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 0 auto; 
+    padding-top: 20px;
+} 
+
+.whychooseus-text {
+    font-family: 'BDScript', cursive;
+    font-weight: bold;
+    font-size: 100px;
+    color: black;
+    text-align: right;
+    margin: 5px 190px 0 0; /* top right bottom left */
+}
+
+.whychooseus-note {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #b76e79;
+    text-align: justify;
+    margin: 5px 70px 0 750px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.whychooseus-paragraph ul {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #b76e79;
+    text-align: justify;
+    margin: 12px 70px 0 840px; /* top right bottom left */
+    line-height: 1.6;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background: #e6e6fa;
+    color: #3b3b3b;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    text-align: left; /* Align text to left inside columns */
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 220px;
+}
+
+.footer-text {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 0 20px 0; /* Space below heading */
+}
+
+.footer-text-info {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0 0 0 0; /* Space below each info item */
+}
+
+.footer-text-info > * {
+    margin-bottom: 30px; /* Adjust spacing as needed */
+}
+
+.footer-logo {
+    width: 140px; /* Change this value to your preferred size */
+    height: auto;
+    /* Optional: add margin if you want more space */
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.social-media-icon {
+    width: 100px; /* Change this value to your preferred size */
+    height: auto;
+    margin-top: 0px;
+    margin-left: 58px;
+}

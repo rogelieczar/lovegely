@@ -1,0 +1,595 @@
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../assets/fonts/Kollektif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../assets/fonts/Kollektif-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../assets/fonts/Kollektif-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kollektif';
+    src: url('../assets/fonts/Kollektif-BoldItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BDScript';
+    src: url('../assets/fonts/BDScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDScript';
+    src: url('../assets/fonts/BDScript-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDSans';
+    src: url('../assets/fonts/BDSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDSans';
+    src: url('../assets/fonts/BDSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDSans';
+    src: url('../assets/fonts/BDSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BDSans ExtReg';
+    src: url('../assets/fonts/BDSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.homepage-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background: #ffc0cb;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto; /* Enable scrolling */
+    padding: 0px 0 0 0px; /* top right bottom left */
+}
+
+.homepage-logo {
+    width: 120px; /* Change this value to your preferred size */
+    height: auto;
+    /* Optional: add margin if you want more space */
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.homepage-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homepage-nav {
+    display: flex;
+    gap: 90px;         /* More space between links */
+    margin-left: 650px; /* Move all links further right */
+}
+
+.nav-link {
+    font-family: 'Kollektif', sans-serif;
+    font-size: 16px;
+    color: #3b3b3b;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s;
+    letter-spacing: 3px; /* Adjust this value as needed */
+    margin-right: 10px; /* Add space after each link */
+}
+
+.nav-link:hover {
+    color: #f5f5dc;
+}
+
+.nav-link.active {
+    color: #f5f5dc;
+}
+
+.white-small-rectangle {
+    position: absolute;
+    width: 700px;
+    height: 380px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    top: 480px; /* Overlap and position above the image */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 2.5px solid #b76e79;
+}
+
+.welcome-text {
+    font-family: 'BDScript', cursive;
+    font-weight: normal;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    margin: 0px 0 0 0;
+}
+
+p{
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    margin: 0px 40px 0 40px; /* Add horizontal margin for better readability */
+}
+
+.shop-now-button {
+    display: inline-block;
+    padding: 6px 50px;
+    background-color: #b76e79; /* Button color */
+    color: white;
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners */
+    margin-top: 30px;
+    letter-spacing: 3px; 
+    border: none; 
+}
+
+.homepage-flowers {
+    position: absolute;
+    width: 1100px;   /* Increased width for larger image */
+    height: auto;   /* Maintain aspect ratio */
+    top: 150px;     /* Position above the white rectangle */
+    left: 50%;      /* Center horizontally */
+    transform: translateX(-50%);
+    border: 15px solid #ffc0cb; /* Example: 4px solid dark border */
+    border-radius: 50px;    /* Optional: rounded corners */
+}
+
+.white-rectangle {
+    width: 1400px;
+    height: 340px;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 420px;
+    margin-left: auto;   /* Center horizontally */
+    margin-right: auto;  /* Center horizontally */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.bestseller-header {
+    width: auto; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 50px auto 0 auto; 
+    border-radius: 30px;
+}
+
+.bestseller-subtext {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    display: block;
+    margin: 25px auto 0px auto; /* Center horizontally */
+    max-width: 800px; /* Optional: limit width for better readability */
+}
+
+.second-white-rectangle {
+    width: 1400px;
+    height: 380px;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 60px;
+    margin-left: auto;   /* Center horizontally */
+    margin-right: auto;  /* Center horizontally */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;              /* Add flexbox */
+    align-items: center;        /* Vertically center buttons */
+    justify-content: space-between; /* Push buttons to far left and right */
+    padding: 0 30px; 
+}
+
+.backbutton-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nextbutton-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.backbutton-image {
+    width: 48px;    /* Set desired width */
+    height: 48px;   /* Set desired height */
+    object-fit: contain; /* Keeps aspect ratio */
+}
+
+.nextbutton-image {
+    width: 48px;    /* Set desired width */
+    height: 48px;   /* Set desired height */
+    object-fit: contain; /* Keeps aspect ratio */
+}
+
+.flower-image {
+    width: 280px;   /* Set desired width */
+    height: 280px;  /* Set desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 20px; /* Optional: rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+
+.carousel-products {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.product-card {
+    background: #e6e6fa;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    transition: transform 0.3s;
+}
+
+/* Make the center product bigger */
+.product-card.center {
+    transform: scale(1.15);
+    z-index: 1;
+}
+
+.flower-image {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Make the center image bigger */
+.product-card.center .flower-image {
+    width: 300px;
+    height: 300px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12px;
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.product-name {
+    color: #3b3b3b;
+}
+
+.product-price {
+    color: #3b3b3b;
+}
+
+.promotext-image{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 40px auto 40px auto; 
+    border-radius: 30px;
+}
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background: #e6e6fa;
+    color: #3b3b3b;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    text-align: left; /* Align text to left inside columns */
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 220px;
+}
+
+.footer-text {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 0 20px 0; /* Space below heading */
+}
+
+.footer-text-info {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0 0 0 0; /* Space below each info item */
+}
+
+.footer-text-info > * {
+    margin-bottom: 30px; /* Adjust spacing as needed */
+}
+
+.homepage-footer-logo {
+    width: 140px; /* Change this value to your preferred size */
+    height: auto;
+    /* Optional: add margin if you want more space */
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.social-media-icon {
+    width: 100px; /* Change this value to your preferred size */
+    height: auto;
+    margin-top: 0px;
+    margin-left: 58px;
+}
+
+/* Responsive fix for main containers */
+@media (max-width: 1400px) {
+    .white-rectangle,
+    .second-white-rectangle {
+        width: 98vw;
+        max-width: 1400px;
+        min-width: unset;
+    }
+    .homepage-flowers {
+        width: 95vw;
+        max-width: 1100px;
+        min-width: unset;
+    }
+    .white-small-rectangle {
+        width: 90vw;
+        max-width: 700px;
+        min-width: unset;
+    }
+}
+
+@media (max-width: 900px) {
+    .white-rectangle,
+    .second-white-rectangle,
+    .white-small-rectangle {
+        width: 99vw;
+        max-width: none;
+        min-width: unset;
+        border-radius: 20px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .homepage-flowers {
+        width: 99vw;
+        max-width: none;
+        min-width: unset;
+        border-radius: 20px;
+        border-width: 6px;
+    }
+    .carousel-products {
+        gap: 10px;
+        flex-direction: column;
+    }
+    .product-card,
+    .flower-image,
+    .product-card.center .flower-image {
+        min-width: 120px;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .white-rectangle,
+    .second-white-rectangle,
+    .white-small-rectangle,
+    .homepage-flowers {
+        width: 100vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        border-radius: 10px;
+    }
+    .footer-section {
+        min-width: 0;
+        width: 95vw;
+    }
+}
+
+@media (max-width: 1500px) {
+    .white-rectangle,
+    .second-white-rectangle {
+        width: 95vw;
+        min-width: 320px;
+        max-width: 1400px;
+    }
+    .homepage-flowers {
+        width: 90vw;
+        max-width: 1100px;
+    }
+    .white-small-rectangle {
+        width: 90vw;
+        max-width: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1100px) {
+    .homepage-nav {
+        margin-left: 0;
+        gap: 40px;
+        justify-content: center;
+    }
+    .white-rectangle,
+    .second-white-rectangle,
+    .white-small-rectangle {
+        width: 98vw;
+        min-width: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .homepage-flowers {
+        width: 98vw;
+        min-width: 0;
+        border-width: 8px;
+    }
+    .carousel-products {
+        gap: 20px;
+    }
+    .flower-image,
+    .product-card.center .flower-image {
+        width: 180px;
+        height: 180px;
+    }
+    .product-card {
+        min-width: 180px;
+    }
+}
+
+/* Responsive navigation for smaller screens */
+@media (max-width: 1200px) {
+    .homepage-nav {
+        margin-left: 0;
+        gap: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .homepage-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .homepage-nav {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .nav-link {
+        margin-right: 0;
+        font-size: 15px;
+    }
+    .homepage-logo {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* You can further tweak the breakpoints and gaps as needed */
+
+@media (max-width: 700px) {
+    .homepage-logo,
+    .homepage-footer-logo,
+    .social-media-icon {
+        width: 60px;
+        margin-left: 10px;
+    }
+    .welcome-text {
+        font-size: 2.2rem;
+    }
+    .white-rectangle,
+    .second-white-rectangle,
+    .white-small-rectangle {
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 20vw;
+    }
+    .homepage-flowers {
+        border-radius: 20px;
+        border-width: 4px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+    }
+    .footer-section {
+        min-width: 0;
+        width: 90vw;
+    }
+    .carousel-products {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .flower-image,
+    .product-card.center .flower-image {
+        width: 120px;
+        height: 120px;
+    }
+    .product-card {
+        min-width: 120px;
+    }
+    .product-info {
+        font-size: 1rem;
+    }
+}
