@@ -27,7 +27,7 @@ const HomePage = () => {
             <div className="homepage-header">
                 <img src={require("../assets/love gely logo.png")} alt="Logo" className="homepage-logo" />
                 <nav className="homepage-nav">
-                    <a href="/homepage" className="nav-link active">HOME</a>
+                    <a href="/" className="nav-link active">HOME</a>
                     <a href="/productpage" className="nav-link">SHOP</a>
                     <a href="/cartpage" className="nav-link">MY CART</a>
                     {/* <a href="/reviews" className="nav-link">REVIEWS</a> */}

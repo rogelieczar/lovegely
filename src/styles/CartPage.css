@@ -150,11 +150,14 @@
 
 .white-rectangle-cartpage1 {
     width: 40%; /* bigger box */
-    height: 1000px;
+    height: auto;
     background: #ffffff;
     border-radius: 30px;
     padding: 20px;
     box-sizing: border-box;
+    box-shadow: 15px 15px 0px #e5acb6; /* Solid shadow with light purple color */
+    position: relative;
+    z-index: 2;
 }
 
 .white-rectangle-cartpage2 {
@@ -162,7 +165,7 @@
     height: 600px;
     background: #ffffff;
     border-radius: 30px;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
 }
 
@@ -230,6 +233,16 @@
     margin: 10px 0;
 }
 
+.funfact-message {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    font-style: italic;
+    color: #b76e79;
+    font-size: 16px;
+    font-family: 'Kollektif', sans-serif;
+}
 
 .footer {
     width: 100%;
@@ -285,4 +298,160 @@
     height: auto;
     margin-top: 0px;
     margin-left: 58px;
+}
+
+/* Add these new styles at the end of your existing CSS */
+.empty-cart-message {
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.delete-btn {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+.summary-title {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #3b3b3b;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Kollektif', sans-serif;
+    font-size: 18px;
+    color: #3b3b3b;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.summary-item.total {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    display: inline-block;
+    padding: 6px 50px;
+    background-color: #b76e79; /* Button color */
+    color: white;
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners */
+    letter-spacing: 3px; 
+    border: none; 
+    margin-top: 260px;
+}
+
+.checkout-btn:hover {
+    background-color: #d191a0;
+}
+
+.billing-address-section {
+    width: 350px;
+    margin: 50px 0 0 1100px;
+}
+
+.billing-header {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.billing-header h2 {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3b3b3b;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.edit-btn {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #b76e79;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.billing-details {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #3b3b3b;
+    line-height: 1.6;
+}
+
+.pname {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: normal;
+    margin: 5px 0;
+    text-align: left;
+    color: #3b3b3b;
+}
+
+.paddress {
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 300;
+   margin: 5px 0;
+   text-align: left;
+   color: #3b3b3b;
+}
+
+.billing-input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #e5acb6;
+    border-radius: 5px;
+    font-family: 'Kollektif', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.save-btn {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #b76e79; /* Button color */
+    color: white;
+    font-family: 'Kollektif', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded corners */
+    letter-spacing: 3px; 
+    border: none; 
+    margin-top: 10px;
+}
+
+.save-btn:hover {
+    background-color: #a35d68;
 }

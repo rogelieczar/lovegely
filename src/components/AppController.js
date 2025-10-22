@@ -10,7 +10,7 @@ const AppController = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/homepage" element={<HomePage />} />
+                <Route path="/" element={<HomePage />} />
                 <Route path="/productpage" element={<ProductPage />} />
                 <Route path="/productdetail" element={<ProductDetailPage />} />
                 <Route path="/cartpage" element={<CartPage />} />

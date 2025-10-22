@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "../styles/AboutPage.css";
 
 
@@ -11,7 +9,7 @@ const AboutPage = () => {
             <div className="aboutpage-header">
                 <img src={require("../assets/love gely logo.png")} alt="Logo" className="aboutpage-logo" />
                 <nav className="aboutpage-nav">
-                    <a href="/homepage" className="nav-link">HOME</a>
+                    <a href="/" className="nav-link">HOME</a>
                     <a href="/productpage" className="nav-link">SHOP</a>
                     <a href="/cartpage" className="nav-link">MY CART</a>
                     {/* <a href="/reviews" className="nav-link">REVIEWS</a> */}
